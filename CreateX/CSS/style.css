@@ -1,0 +1,116 @@
+html, body {
+  font-family: Lato, sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header {}
+
+.container {
+  max-width: 1260px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.button {
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  line-height: 52px;
+  background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+  color: #fff;
+  padding: 0 40px;
+  border-radius: 4px;
+  white-space: nowrap;
+  transition: transform .3s;
+}
+
+.button:hover {
+  transform: scale(1.04);
+}
+
+.header__top {
+  margin-top: 20px;
+  color: #424551;
+}
+
+.container {}
+
+.header__top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  height: 52px;
+  white-space: nowrap;
+}
+
+.header__logo {
+  margin-right: 40px;
+}
+
+.header__nav-menu {
+  margin-right: auto;
+}
+
+.header__nav-link {
+  display: flex;
+  line-height: 1.6;
+}
+
+.header__nav-items {
+  margin: 0 20px;
+  transition: 0.3s;
+}
+
+.header__nav-items:hover { 
+  color: #FF3F3A;
+}
+
+
+.header__nav-items:last-child {
+  margin-right: 0;
+}
+
+.header__btn-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__btn-top {
+  margin-right: 36px;
+}
+
+.header__user-nav {
+  position: relative;
+  padding-left: 28px;
+  line-height: 1.6;
+}
+
+.header__user-nav::before {
+  content: url("/Images/icons/Profile.svg");
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.header__user-btn {
+  margin: 0 5px 0 0;
+  transition: 0.3s;
+}
+
+.header__user-btn:hover { 
+  color: #FF3F3A;
+}
+
+.header__user-btn:last-child {
+  margin-left: 5px;
+}
