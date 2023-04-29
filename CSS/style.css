@@ -161,7 +161,7 @@ html, body {
 }
 
 .header__user-nav::before {
-  content: url("./Images/icons/Profile.svg");
+  content: url("Images/icons/Profile.svg");
   width: 20px;
   height: 20px;
   position: absolute;
