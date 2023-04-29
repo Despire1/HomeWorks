@@ -218,12 +218,10 @@ html, body {
 }
 
 .header__title {
-  font-style: normal;
   font-weight: 900;
-  font-size: 64px;
-  letter-spacing: 1px;
-  max-width: 500px;
-  margin-bottom: 30px;
+font-size: 64px;
+line-height: 130%;
+letter-spacing: 1px;
 }
 
 .header__btn-box {
