@@ -163,7 +163,7 @@ html, body {
   content: "";
   width: 20px;
   height: 20px;
-  background: url("../Images/icons/Profile.svg") 0 0 / 100% no-repeat;
+  background: url('../Images/icons/Profile.svg') 0 0 / 100% no-repeat;
   position: absolute;
   display: block;
   top: 50%;
@@ -516,7 +516,7 @@ html, body {
   color: #FF3F3A;
 }
 
-.directions__list-item:last-child {
+.directions__list-item--empty {
   background: #F4F5F7;
   color: #424551;
   font-weight: 700;
@@ -528,7 +528,7 @@ html, body {
   justify-content: center;
 }
 
-.directions__list-item:last-child p {
+.directions__list-item--empty p {
   max-width: 240px;
 }
 
@@ -2137,12 +2137,16 @@ html, body {
   }
 
   /* ------------------------------------------------- */
+  .main__directions {
+    padding-bottom: 30px;
+  }
   .directions__list {
     grid-template: none;
   }
 
-  .directions__list-item:last-child {
-    display: none;
+  .directions__list-item--empty {
+    opacity: 0;
+    visibility: hidden;
   }
 
   .team__image-box {
