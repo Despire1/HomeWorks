@@ -163,7 +163,7 @@ html, body {
   content: "";
   width: 20px;
   height: 20px;
-  background: url('../Images/icons/Profile.svg') 0 0 / 100% no-repeat;
+  background: url("../Images/icons/Profile.svg") 0 0 / 100% no-repeat;
   position: absolute;
   display: block;
   top: 50%;
