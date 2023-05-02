@@ -65,10 +65,6 @@
 .header, .header-bl {
   z-index: 10;
   padding-bottom: 250px;
-  /* position: relative; */
-}
-
-.header, .container {
   position: relative;
 }
 
