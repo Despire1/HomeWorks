@@ -43,6 +43,7 @@ $(function () {
     autoplay: true,
     autoplaySpeed: 4000,
     vertical: true,
+    verticalSwiping: true,
   })
   $('.reviews__slider').slick({
     arrows: false,
