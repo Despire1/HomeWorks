@@ -5,6 +5,11 @@ $(function () {
     if ($(this).hasClass('filter-btn--active') === false) {
       $('.filter-btn').removeClass('filter-btn--active')
       $(this).addClass('filter-btn--active')
+      if ($(this).hasClass('filter-white')) {
+        $('.filter-white').addClass('filter-btn--active')
+      } else if ($(this).hasClass('filter-black')) {
+        $('.filter-black').addClass('filter-btn--active')
+      }
     }
     if ($('.filter-white').hasClass('filter-btn--active')) {
       $('.container').removeClass('container-bl')

@@ -123,6 +123,9 @@
 
 .header__btn {}
 
+.header__btn:hover {
+}
+
 .button {
   display: block;
   padding: 15px 35px;
@@ -135,7 +138,9 @@
 }
 
 .button:hover {
-  box-shadow: 3px 7px 35px 0px #222222;
+  background: #FF4C0D;
+  color: #F1F1F1;
+  box-shadow: 1px 2px 40px 0px rgba(242, 242, 242, 0.2);
 }
 
 .header__body {}
@@ -927,7 +932,14 @@
 .sale__btn-box {}
 
 .sale__btn {
-  display: block;
+  background:#F1F1F1;
+  color: #151515;
+  transition: all .3s;
+}
+.sale__btn:hover {
+  background: #FF4C0D;
+  color: #F1F1F1;
+  box-shadow: 1px 2px 40px 0px rgba(242, 242, 242, 0.2);
 }
 
 .sale__complect {
