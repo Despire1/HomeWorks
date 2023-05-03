@@ -4,7 +4,7 @@
 }
 
 
-.wrapper, .wrapper-wh, .wrapper-bl {
+.wrapper {
   min-height: 100%;
   width: 100%;
   overflow: hidden;
@@ -14,17 +14,9 @@
   line-height: 150%;
   z-index: -5;
   color: #F1F1F1;
-}
-
-.wrapper-wh {
   background: var(--bg-color) url("../images/bg-elipse.svg") no-repeat;
   background-size: cover;
-  background-position: -160px -440px;
-  /* background-position: -175px -780px; */
-}
-
-.wrapper-bl {
-  background: url("../images/bg-elipse.svg") 0 0 no-repeat, #F1F1F1;
+  background-position: -160px -585px;
 }
 
 
@@ -33,7 +25,10 @@
   padding: 0 15px;
   margin: 0 auto;
   height: 100%;
+  position: relative;
+  z-index: 10;
 }
+
 
 .main__specs {
   padding-bottom: 120px;
@@ -59,20 +54,24 @@
   z-index: 2;
 }
 
-/* ================================HEADER================================== */
-/* ================================HEADER================================== */
-
-.header, .header-bl {
-  z-index: 10;
-  padding-bottom: 250px;
-  position: relative;
+.main__questions {
+  padding-bottom: 120px;
 }
 
-.header::before, .header-bl::before {
+/* ================================HEADER================================== */
+/* ================================HEADER================================== */
+
+.header {
+  z-index: 10;
+  padding-bottom: 250px;
+}
+
+.header__top .container-wh::before,
+.header__top .container-bl::before {
   content: "";
   position: absolute;
-  top: -415px;
-  right: -730px;
+  top: -412px;
+  right: -881px;
   width: 1946px;
   height: 1329px;
   background: url("../images/top-bike.svg") 0 0 / 100% no-repeat, url("../images/top-bike-bl.svg") 0 0 / 100% no-repeat;
@@ -80,7 +79,7 @@
   background-blend-mode: normal, multiply;
 }
 
-.header-bl::before {
+.header__top .container-bl::before {
   background-blend-mode: multiply, normal;
 }
 
@@ -164,14 +163,14 @@
   margin-bottom: 80px;
 }
 
-.header__body-filter {
+.filter {
   display: flex;
   border: 3px solid #F1F1F1;
   border-radius: 108px;
   max-width: 250px;
 }
 
-.header__filter-btn {
+.filter-btn {
   padding: 15px 35px;
   font-weight: 700;
   font-size: 16px;
@@ -180,7 +179,7 @@
   transition: all .3s;
 }
 
-.header__filter-btn--active {
+.filter-btn--active {
   background: #F1F1F1;
   border-radius: 65px;
   color: #151515;
@@ -699,7 +698,9 @@
 
 .reviews__btn-box {}
 
-.reviews__btn {}
+.reviews__btn {
+  transition: all .3s;
+}
 
 .reviews__btn:hover {
   box-shadow: 1px 2px 40px 0px rgba(242, 242, 242, 0.2);
@@ -747,3 +748,218 @@
 }
 
 .reviews__arrow--next {}
+
+
+/* ===================================QUESTIONS===================================== */
+/* ===================================QUESTIONS===================================== */
+
+.questions {}
+
+.questions__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.questions__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 30px;
+}
+
+.questions__content-title {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 110%;
+  color: #FF4C0D;
+  margin-bottom: 30px;
+}
+
+.questions__content-text {
+  margin-bottom: 60px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #F1F1F1;
+}
+
+.questions__btn-box {}
+
+.questions__btn {
+  transition: all .3s;
+}
+
+.questions__btn:hover {
+  box-shadow: 1px 2px 40px 0px rgba(242, 242, 242, 0.2);
+}
+
+.questions__list {
+  display: flex;
+  flex-direction: column;
+  max-width: 660px;
+  width: 100%;
+}
+
+.questions__list-item {}
+
+.questions__item-link {
+  display: block;
+  cursor: pointer;
+}
+
+.questions__item-link span {
+  transform: rotateY(90deg);
+  transition: all .3s;
+}
+
+.questions__item--active span {
+  transform: rotateY(0deg);
+  ;
+}
+
+.questions__list-item span {
+  width: 100px;
+  height: 3px;
+  background: #FF4C0D;
+  margin: 15px 0;
+  display: block;
+}
+
+.questions__item-head {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  position: relative;
+}
+
+.questions__item-head::after {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  right: 0;
+  background: url("../images/arrow-left.svg") 0 0 no-repeat;
+  transition: all .4s;
+}
+
+.questions__item--active .questions__item-head::after {
+  transform: rotateZ(-90deg) rotateY(180deg);
+}
+
+.questions__item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  display: none;
+  margin-bottom: 40px;
+}
+
+
+/* ===================================SALE===================================== */
+/* ===================================SALE===================================== */
+
+.main__sale {}
+
+.sale {}
+
+.sale__inner, .sale__inner-bl {
+  display: flex;
+  justify-content: space-between;
+  background: #151515;
+  border-radius: 15px;
+  padding: 60px;
+  height: 550px;
+  position: relative;
+}
+
+.sale__inner::after,
+.sale__inner-bl::after {
+  content: "";
+  position: absolute;
+  width: 953px;
+  height: 660px;
+  top: -110px;
+  right: -130px;
+  background: url("../images/btm-bike.svg") 0 0 no-repeat, url("../images/btm-bike-bl.svg") 0 0 no-repeat;
+  background-blend-mode: normal, multiply;
+}
+
+.sale__inner-bl::after {
+  background-blend-mode: multiply, normal;
+}
+
+.sale__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.sale__content-title {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 110%;
+  margin-bottom: 20px;
+}
+
+.sale__content-price {
+  display: block;
+  color: #FF4C0D;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 110%;
+  margin-bottom: 40px;
+}
+
+.sale__filter-wrapper {
+  flex-grow: 1;
+}
+
+.sale__body-filter {
+  flex-grow: 1;
+}
+
+.sale__filter-btn {}
+
+.sale__btn-box {}
+
+.sale__btn {
+  display: block;
+}
+
+.sale__complect {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.sale__complect-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+.sale__complect-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.sale__complect-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  margin-bottom: 10px;
+}
+.sale__complect-item:last-child {
+  margin: 0;
+}
+
+
+
+
+/* ===================================QUESTIONS===================================== */

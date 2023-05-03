@@ -1,25 +1,23 @@
 $(function () {
 
-  $('.header__filter-btn').on('click', function (e) {
+  $('.filter-btn').on('click', function (e) {
     e.preventDefault()
-    if ($(this).hasClass('header__filter-btn--active') === false) {
-      $('.header__filter-btn').removeClass('header__filter-btn--active')
-      $(this).addClass('header__filter-btn--active')
+    if ($(this).hasClass('filter-btn--active') === false) {
+      $('.filter-btn').removeClass('filter-btn--active')
+      $(this).addClass('filter-btn--active')
     }
-    if ($('.filter-white').hasClass('header__filter-btn--active')) {
-      $('header').removeClass('header-bl')
-      $('header').addClass('header')
-      // $('.wrapper').removeClass('wrapper-bl')
-      // $('.wrapper').addClass('wrapper-wh')
+    if ($('.filter-white').hasClass('filter-btn--active')) {
+      $('.container').removeClass('container-bl')
+      $('.container').addClass('container-wh')
       $(':root').css('--bg-color', '#222222')
       $(':root').css('--title-color', '#F1F1F1')
-    } else if ($('.filter-black').hasClass('header__filter-btn--active')) {
-      $('header').removeClass('header')
-      $('header').addClass('header-bl')
-      // $('.wrapper').removeClass('wrapper-wh')
-      // $('.wrapper').addClass('wrapper-bl')
+      $('.sale__inner').removeClass('sale__inner-bl')
+    } else if ($('.filter-black').hasClass('filter-btn--active')) {
+      $('.container').removeClass('container-wh')
+      $('.container').addClass('container-bl')
       $(':root').css('--bg-color', '#F1F1F1')
       $(':root').css('--title-color', '#FF4C0D')
+      $('.sale__inner').addClass('sale__inner-bl')
     }
   })
 
@@ -60,4 +58,17 @@ $(function () {
     $('.reviews__slider').slick('slickNext')
   })
   
+  $('.questions__item-link').on('click', function (e) {
+    e.preventDefault()
+    if ($(this).hasClass('questions__item--active')) {
+      $(this).removeClass('questions__item--active')
+      $(this).children('.questions__item-text').slideUp('questions__item-text')
+    } else {
+      $('.questions__item-link').removeClass('questions__item--active')
+      $('.questions__item-text').slideUp()
+      $(this).addClass('questions__item--active')
+      $(this).children('.questions__item-text').slideDown('questions__item-text')
+    }
+  })
+
 })
