@@ -230,7 +230,7 @@
   position: relative;
 }
 
-.main__specs .container::before { 
+.main__specs .container::before {
   content: "";
   background: url("../images/specs--bg-line.svg") 10px 0 no-repeat;
   width: 1522px;
@@ -430,6 +430,7 @@
   position: absolute;
   z-index: -1;
 }
+
 .main__design .container::after {
   content: "";
   bottom: -920px;
@@ -506,6 +507,7 @@
   background: url("../images/safety-btm-line-2.svg") no-repeat;
   z-index: -1;
 }
+
 /* .main__safety .container::before {
   content: "";
   position: absolute;
@@ -616,6 +618,7 @@
   overflow: hidden;
   height: min-content;
 }
+
 .safety__img-box:last-child {
   position: relative;
   z-index: -2;
@@ -764,6 +767,7 @@
   overflow: visible;
   position: relative;
 }
+
 .main__reviews .container::before {
   content: "";
   top: -259px;
@@ -1016,8 +1020,8 @@
 .main__sale::before {
   position: absolute;
   content: "";
-  top: 0;
-  left: 0;
+  top: -169px;
+  left: 31px;
   width: 1440px;
   height: 719px;
   background: url("../images/sale-bg-line.svg") 0 0 no-repeat;
