@@ -1021,11 +1021,10 @@
   position: absolute;
   content: "";
   top: -169px;
-  left: 31px;
-  width: 1440px;
-  height: 719px;
+  left: -48px;
+  width: 1667px;
+  height: 814px;
   background: url("../images/sale-bg-line.svg") 0 0 no-repeat;
-  z-index: ;
 }
 
 .sale {}
