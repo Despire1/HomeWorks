@@ -17,19 +17,22 @@
         <div class="container container-wh">
           <div class="header__top-inner">
             <div class="header__top-logo">
-              <img src="images/header/top-logo.svg" alt="" class="header__logo">
+              <svg width="60" height="39" viewBox="0 0 60 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M59.3689 0C59.7139 0 60 0.281934 60 0.629353V38.3743C60 38.7162 59.7139 39 59.3689 39H51.2391C50.8904 39 50.6079 38.7162 50.6079 38.3743V0.629353C50.6079 0.281934 50.8904 0 51.2391 0H59.3689ZM24.0926 0C30.2253 0 36.6369 0.285574 39.798 3.50511C42.909 6.6736 43.2446 12.9812 43.2573 19.1066L43.2576 38.3743C43.2576 38.7162 42.9752 39 42.6265 39H34.5003C34.1516 39 33.8673 38.7162 33.8673 38.3743V18.7751C33.8584 15.3537 33.6653 11.8377 31.931 10.0679C30.4381 8.5454 27.6524 8.19617 24.7559 8.12341H10.0232C9.67639 8.12341 9.39388 8.40716 9.39388 8.74912V38.3743C9.39388 38.7162 9.10782 39 8.76095 39H0.627567C0.280704 39 0 38.7162 0 38.3743V0.629353C0 0.281934 0.280704 0 0.627567 0H24.0926ZM25.9128 15.0318C26.2578 15.0318 26.5385 15.3137 26.5385 15.6575V38.3743C26.5385 38.7162 26.2578 39 25.9128 39H17.3735C17.0231 39 16.7406 38.7162 16.7406 38.3743V15.6575C16.7406 15.3137 17.0231 15.0318 17.3735 15.0318H25.9128Z" fill="#F1F1F1"/>
+                </svg>
+                
             </div>
             <nav class="header__top--nav-menu">
               <ul class="header__top-nav">
-                <li class="header__nav-item">О продукте</li>
-                <li class="header__nav-item">Внешний вид</li>
-                <li class="header__nav-item">Безопасность</li>
-                <li class="header__nav-item">Отзывы</li>
-                <li class="header__nav-item">FAQ</li>
+                <li class="header__nav-item"><a href="#specs" class="header__top-link">О продукте</a></li>
+                <li class="header__nav-item"><a href="#design" class="header__top-link">Внешний вид</a></li>
+                <li class="header__nav-item"><a href="#safety" class="header__top-link">Безопасность</a></li>
+                <li class="header__nav-item"><a href="#reviews" class="header__top-link">Отзывы</a></li>
+                <li class="header__nav-item"><a href="#questions" class="header__top-link">FAQ</a></li>
               </ul>
             </nav>
             <div class="header__btn-box">
-              <a href="#" class="header__btn button">Купить</a>
+              <a href="#sale" class="header__btn button">Купить</a>
             </div>
           </div>
         </div>
@@ -48,7 +51,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="main__specs specs">
+      <section class="main__specs specs" id="specs">
         <div class="container">
           <div class="specs__inner">
             <h3 class="specs__title">Мощная батарея и экономичный расход заряда позволяют преодолевать расстояния до 45 км</h3>
@@ -90,7 +93,7 @@
             </div>
           </div>
       </section>
-      <section class="main__design design">
+      <section class="main__design design" id="design">
         <div class="container">
           <div class="design__inner">
             <div class="design__title">Лаконичный современный дизайн, <br> в котором нет ничего лишнего</div>
@@ -110,7 +113,7 @@
           </div>
         </div>
       </section>
-      <section class="main__safety safety">
+      <section class="main__safety safety" id="safety">
         <div class="container">
           <div class="safety__inner">
             <h3 class="safety__title">Заботится о вашей безопасности</h3>
@@ -156,6 +159,7 @@
               </div>
             </div>
             <div class="app__image-box"><img src="images/mi-mobile.svg" alt=""></div>
+            <div class="app__image-box-wh"><img src="images/mi-phone-wh.svg" alt=""></div>
           </div>
         </div>
       </section>
@@ -217,7 +221,7 @@
           </div>
         </div>
       </section>
-      <section class="main__reviews reviews">
+      <section class="main__reviews reviews" id="reviews">
         <div class="container">
           <div class="reviews__inner">
             <div class="reviews__title">Отзывы о Mi Scooter Pro 2</div>
@@ -297,7 +301,7 @@
           </div>
         </div>
       </section>
-      <section class="main__questions questions">
+      <section class="main__questions questions" id="questions">
         <div class="container">
           <div class="questions__inner">
             <div class="questions__content">
@@ -315,28 +319,72 @@
             <ul class="questions__list">
               <li class="questions__list-item">
                 <a class="questions__item-link" href="#">
-                  <h5 class="questions__item-head">На него нужны права категории M?</h5>
+                  <div class="questions__item-head"><h5 class="questions__head-text">На него нужны права категории M?</h5>
+                    <div class="questions__arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13.8287 19C13.5367 19 13.2467 18.873 13.0487 18.627L8.22066 12.627C7.92266 12.256 7.92666 11.726 8.23166 11.36L13.2317 5.35998C13.5847 4.93598 14.2157 4.87898 14.6407 5.23198C15.0647 5.58498 15.1217 6.21598 14.7677 6.63998L10.2927 12.011L14.6077 17.373C14.9537 17.803 14.8857 18.433 14.4547 18.779C14.2707 18.928 14.0487 19 13.8287 19Z" fill="white"/>
+                      <mask id="mask0_2_321" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="8" y="5" width="7" height="14">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13.8287 19C13.5367 19 13.2467 18.873 13.0487 18.627L8.22066 12.627C7.92266 12.256 7.92666 11.726 8.23166 11.36L13.2317 5.35998C13.5847 4.93598 14.2157 4.87898 14.6407 5.23198C15.0647 5.58498 15.1217 6.21598 14.7677 6.63998L10.2927 12.011L14.6077 17.373C14.9537 17.803 14.8857 18.433 14.4547 18.779C14.2707 18.928 14.0487 19 13.8287 19Z" fill="white"/>
+                      </mask>
+                      <g mask="url(#mask0_2_321)">
+                      <rect width="24" height="24" fill="white"/>
+                      </g>
+                      </svg>
+                      </div>
+                  </div>
                   <span></span>
                   <p class="questions__item-text">Продуманный угол рассеивания света позволяет сохранять хорошую видимость, не ослепляя <br> других участников движения.</p>
                 </a>
               </li>
               <li class="questions__list-item">
                 <a class="questions__item-link" href="#">
-                  <h5 class="questions__item-head">У меня вес 135 кг, выдержит ли этот самокат?</h5>
+                  <div class="questions__item-head"><h5 class="questions__head-text">У меня вес 135 кг, выдержит ли этот самокат?</h5>
+                    <div class="questions__arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13.8287 19C13.5367 19 13.2467 18.873 13.0487 18.627L8.22066 12.627C7.92266 12.256 7.92666 11.726 8.23166 11.36L13.2317 5.35998C13.5847 4.93598 14.2157 4.87898 14.6407 5.23198C15.0647 5.58498 15.1217 6.21598 14.7677 6.63998L10.2927 12.011L14.6077 17.373C14.9537 17.803 14.8857 18.433 14.4547 18.779C14.2707 18.928 14.0487 19 13.8287 19Z" fill="white"/>
+                      <mask id="mask0_2_321" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="8" y="5" width="7" height="14">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13.8287 19C13.5367 19 13.2467 18.873 13.0487 18.627L8.22066 12.627C7.92266 12.256 7.92666 11.726 8.23166 11.36L13.2317 5.35998C13.5847 4.93598 14.2157 4.87898 14.6407 5.23198C15.0647 5.58498 15.1217 6.21598 14.7677 6.63998L10.2927 12.011L14.6077 17.373C14.9537 17.803 14.8857 18.433 14.4547 18.779C14.2707 18.928 14.0487 19 13.8287 19Z" fill="white"/>
+                      </mask>
+                      <g mask="url(#mask0_2_321)">
+                      <rect width="24" height="24" fill="white"/>
+                      </g>
+                      </svg>
+                      </div>
+                  </div>
                   <span></span>
                   <p class="questions__item-text">Самокат определенно выдержит и будет ехать, но не с максимальной скоростью.</p>
                 </a>
               </li>
               <li class="questions__list-item">
                 <a class="questions__item-link" href="#">
-                  <h5 class="questions__item-head">Есть ли влагозащита?</h5>
+                  <div class="questions__item-head"><h5 class="questions__head-text">Есть ли влагозащита?</h5>
+                    <div class="questions__arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13.8287 19C13.5367 19 13.2467 18.873 13.0487 18.627L8.22066 12.627C7.92266 12.256 7.92666 11.726 8.23166 11.36L13.2317 5.35998C13.5847 4.93598 14.2157 4.87898 14.6407 5.23198C15.0647 5.58498 15.1217 6.21598 14.7677 6.63998L10.2927 12.011L14.6077 17.373C14.9537 17.803 14.8857 18.433 14.4547 18.779C14.2707 18.928 14.0487 19 13.8287 19Z" fill="white"/>
+                      <mask id="mask0_2_321" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="8" y="5" width="7" height="14">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13.8287 19C13.5367 19 13.2467 18.873 13.0487 18.627L8.22066 12.627C7.92266 12.256 7.92666 11.726 8.23166 11.36L13.2317 5.35998C13.5847 4.93598 14.2157 4.87898 14.6407 5.23198C15.0647 5.58498 15.1217 6.21598 14.7677 6.63998L10.2927 12.011L14.6077 17.373C14.9537 17.803 14.8857 18.433 14.4547 18.779C14.2707 18.928 14.0487 19 13.8287 19Z" fill="white"/>
+                      </mask>
+                      <g mask="url(#mask0_2_321)">
+                      <rect width="24" height="24" fill="white"/>
+                      </g>
+                      </svg>
+                      </div>
+                  </div>
                   <span></span>
                   <p class="questions__item-text">Электросамокат имеет степень защиты IP54. Он защищен от попадания пыли и брызг, падающих <br> в любом направлении. Погружение в воду может привести к поломке.</p>
                 </a>
               </li>
               <li class="questions__list-item">
                 <a class="questions__item-link" href="#">
-                  <h5 class="questions__item-head">Это версия для Китая или Европы?</h5>
+                  <div class="questions__item-head"><h5 class="questions__head-text">Это версия для Китая или Европы?</h5>
+                    <div class="questions__arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13.8287 19C13.5367 19 13.2467 18.873 13.0487 18.627L8.22066 12.627C7.92266 12.256 7.92666 11.726 8.23166 11.36L13.2317 5.35998C13.5847 4.93598 14.2157 4.87898 14.6407 5.23198C15.0647 5.58498 15.1217 6.21598 14.7677 6.63998L10.2927 12.011L14.6077 17.373C14.9537 17.803 14.8857 18.433 14.4547 18.779C14.2707 18.928 14.0487 19 13.8287 19Z" fill="white"/>
+                      <mask id="mask0_2_321" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="8" y="5" width="7" height="14">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13.8287 19C13.5367 19 13.2467 18.873 13.0487 18.627L8.22066 12.627C7.92266 12.256 7.92666 11.726 8.23166 11.36L13.2317 5.35998C13.5847 4.93598 14.2157 4.87898 14.6407 5.23198C15.0647 5.58498 15.1217 6.21598 14.7677 6.63998L10.2927 12.011L14.6077 17.373C14.9537 17.803 14.8857 18.433 14.4547 18.779C14.2707 18.928 14.0487 19 13.8287 19Z" fill="white"/>
+                      </mask>
+                      <g mask="url(#mask0_2_321)">
+                      <rect width="24" height="24" fill="white"/>
+                      </g>
+                      </svg>
+                      </div>
+                  </div>
                   <span></span>
                   <p class="questions__item-text">Это Европейская версия, со всеми обновлениями и евро-вилкой.</p>
                 </a>
@@ -345,7 +393,7 @@
           </div>
         </div>
       </section>
-      <section class="main__sale sale">
+      <section class="main__sale sale" id="sale">
         <div class="container">
           <div class="sale__inner">
             <div class="sale__content">
@@ -358,7 +406,7 @@
                   </div>
                 </div>
                 <div class="sale__btn-box">
-                  <a href="#" class="sale__btn button">Купить</a>
+                  <a href="#sale" class="sale__btn button">Купить</a>
                 </div>
             </div>
             <div class="sale__complect">
@@ -377,6 +425,20 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__left">
+            <p class="footer__left-text">© 2010 - 2021 Xiaomi.</p>
+            <p class="footer__left-text">Все права защищены.</p>
+          </div>
+          <div class="footer__right">
+            <a href="tel:88007756615" class="footer__tel">8 800 775 66 15</a>
+            <p class="footer__time">Часы работы с 9:00 до 20:00 МСК, Пн. – Пт.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </body>
 
