@@ -77,6 +77,10 @@
   padding-bottom: 120px;
 }
 
+.burger {
+  display: none;
+}
+
 /* ================================HEADER================================== */
 /* ================================HEADER================================== */
 
@@ -102,7 +106,9 @@
   background-blend-mode: multiply, normal;
 }
 
-.header__top {}
+.header__top {
+  position: relative;
+}
 
 
 .header__top-inner {
@@ -118,6 +124,10 @@
 
 .header__top-logo path {
   fill: var(--wh-to-orng);
+}
+
+.header__logo--show {
+  display: none;
 }
 
 .header__logo {}
@@ -690,7 +700,8 @@
 .image-slide {}
 
 .image-slide__wrapper {
-  background: url('../images/bottom-main-img.jpg') 0 0 / cover no-repeat;
+  background: url('../images/bottom-main-img.jpg') 0 0 no-repeat;
+  background-size: cover;
   height: 600px;
   position: relative;
 }
@@ -1173,3 +1184,261 @@
 }
 
 .footer__time {}
+
+
+/* ===================================MEDIA===================================== */
+/* ===================================1100===================================== */
+
+@media (max-width: 1100px) {
+  .overlay {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.329);
+    z-index: 50;
+    transition: all .3s;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .overlay-show {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .header__top .container-wh::before,
+  .header__top .container-bl::before {
+    display: none;
+  }
+
+  .header__body-filter-wh,
+  .header__body-filter-bl {
+    position: relative;
+  }
+
+  .header__body-filter-wh::before,
+  .header__body-filter-bl::before {
+    content: "";
+    position: absolute;
+    top: -1042px;
+    right: -1527px;
+    width: 1946px;
+    height: 1329px;
+    background: url("../images/top-bike.svg") 0 0 / 100% no-repeat, url("../images/top-bike-bl.svg") 0 0 / 100% no-repeat;
+    z-index: -10;
+    background-blend-mode: normal, multiply;
+  }
+
+  .header__body-filter-bl::before {
+    background-blend-mode: multiply, normal;
+  }
+
+  .header__logo--show {
+    display: block;
+    position: fixed;
+    top: 43px;
+    left: 40px;
+    z-index: 160;
+  }
+
+  .container {
+    padding: 0 40px;
+  }
+
+  .header__top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #F1F1F1;
+    min-width: 320px;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: all .3s;
+  }
+
+  .header__top-open {
+    transform: translateX(0%);
+  }
+
+  .header__top-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding-bottom: 100px;
+  }
+  .header__top-logo {
+    display: none;
+  }
+
+  .header__top--nav-menu {
+    margin: 0 auto;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .header__top-nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .header__nav-item {
+    margin: 0 0 40px;
+  }
+
+  .header__top-link {
+    color: #151515;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .header__btn-box {
+    
+  }
+
+  .header__btn {
+    background: #151515;
+    color: #F1F1F1;
+  }
+
+  .header__body {
+    padding-top: +116px;
+  }
+
+  .burger {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    position: fixed;
+    top: 55px;
+    right: 55px;
+    z-index: 150;
+    border-radius: 64px;
+    background: #F1F1F1;
+    z-index: 150;
+  }
+
+  .burger span {
+    display: block;
+    width: 23px;
+    height: 3px;
+    border-radius: 2px;
+    background: #3a3939;
+    position: relative;
+    margin-bottom: 4px;
+  }
+
+  .burger span:last-child {
+    margin-bottom: 0px;
+  }
+
+  .header__body-title {
+    font-size: 54px;
+    line-height: 120%;
+    color: #FF4C0D;
+  }
+
+  .header__body-text {
+    font-size: 26px;
+    color: var(--wh-to-bl);
+  }
+
+  /* .burger span::before {
+    position: absolute;
+    content: "";
+    top: -7px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    border-radius: 2px;
+    background: #3a3939;
+  }
+  .burger span::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    border-radius: 2px;
+    background: #3a3939;
+    bottom: -7px;
+    left: 0;
+  } */
+}
+
+/* ===================================960===================================== */
+@media (max-width: 960px) {
+  .header__body-title {
+    font-size: 40px;
+    line-height: 120%;
+  }
+
+  .header__body-text {
+    font-size: 20px;
+    line-height: 120%;
+  }
+}
+
+/* ===================================480===================================== */
+@media (max-width: 480px) {
+  .burger {
+    top: 20px;
+    right: 20px;
+  }
+
+  .header {
+    padding-bottom: 60px;
+  }
+
+  .header__logo--show {
+    top: 25px;
+    left: 20px;
+  }
+
+  .header__top {
+    max-width: none;
+    width: 100%;
+  }
+
+  .header__body-inner {
+    padding-top: 220px;
+  }
+
+
+  .header__body-filter-wh::before,
+  .header__body-filter-bl::before {
+    content: "";
+    position: absolute;
+    top: -834px;
+    right: -441px;
+    width: 847px;
+    height: 579px;
+    background: url("../images/top-bike.svg") 0 0 / contain no-repeat, url("../images/top-bike-bl.svg") 0 0 / contain no-repeat;
+    z-index: -10;
+    background-blend-mode: normal, multiply;
+  }
+
+  .header__body-title {
+    font-size: 30px;
+  }
+
+  .header__body-text {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .header__body-filter-bl::before {
+    background-blend-mode: multiply, normal;
+  }
+
+  .header__body-filter {
+    align-self: center;
+  }
+}

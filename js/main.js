@@ -22,6 +22,8 @@ $(function () {
       $('.sale__inner').removeClass('sale__inner-bl')
       $('.app__image-box').css('display', 'block')
       $('.app__image-box-wh').css('display', 'none')
+      $('.header__body-filter').removeClass('header__body-filter-bl')
+      $('.header__body-filter').addClass('header__body-filter-wh')
     } else if ($('.filter-black').hasClass('filter-btn--active')) {
       $('.container').removeClass('container-wh')
       $('.container').addClass('container-bl')
@@ -33,6 +35,8 @@ $(function () {
       $('.sale__inner').addClass('sale__inner-bl')
       $('.app__image-box').css('display', 'none')
       $('.app__image-box-wh').css('display', 'block')
+      $('.header__body-filter').removeClass('header__body-filter-wh')
+      $('.header__body-filter').addClass('header__body-filter-bl')
     }
   })
 
@@ -90,9 +94,15 @@ $(function () {
     e.preventDefault()
     var id = $(this).attr('href'),
 
-        top = $(id).offset().top - 60
+        top = $(id).offset().top - 15
 
     $('body,html').animate({scrollTop: top}, 1000)
+  })
+
+  $('.burger, .overlay, .header__top a').on('click', function (e) {
+    e.preventDefault()
+    $('.header__top').toggleClass('header__top-open')
+    $('.overlay').toggleClass('overlay-show')
   })
 
 })
