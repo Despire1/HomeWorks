@@ -56,17 +56,18 @@ $(function () {
     })
   }
 
-  if ($(window).width() < 640) {
-    $('.image__slider').slick({
-      arrows: false,
-      infinite: true,
-      dots: true,
-      autoplay: false,
-      autoplaySpeed: 4000,
-      vertical: false,
-      verticalSwiping: false,
-    })
-  }
+  // if ($(window).width() < 640) {
+  //   $('.image__slider').slick({
+  //     arrows: false,
+  //     infinite: true,
+  //     dots: true,
+  //     autoplay: false,
+  //     autoplaySpeed: 4000,
+  //     vertical: false,
+  //     verticalSwiping: false,
+  //   })
+  // }
+
   $('.image__slider').slick({
     arrows: false,
     infinite: true,
@@ -75,6 +76,14 @@ $(function () {
     autoplaySpeed: 4000,
     vertical: true,
     verticalSwiping: true,
+    responsive: [
+      {
+        breakpoint: 640,
+        settings: {
+          vertical: false,
+          verticalSwiping: false,
+        }
+      }]
   })
   $('.reviews__slider').slick({
     arrows: false,
@@ -90,7 +99,7 @@ $(function () {
     e.preventDefault()
     $('.reviews__slider').slick('slickNext')
   })
-  
+
   $('.questions__item-link').on('click', function (e) {
     e.preventDefault()
     if ($(this).hasClass('questions__item--active')) {
@@ -108,9 +117,9 @@ $(function () {
     e.preventDefault()
     var id = $(this).attr('href'),
 
-        top = $(id).offset().top - 15
+      top = $(id).offset().top - 15
 
-    $('body,html').animate({scrollTop: top}, 1000)
+    $('body,html').animate({ scrollTop: top }, 1000)
   })
 
   $('.burger, .overlay, .header__top a').on('click', function (e) {
