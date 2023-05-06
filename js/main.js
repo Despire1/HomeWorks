@@ -56,6 +56,17 @@ $(function () {
     })
   }
 
+  if ($(window).width() < 640) {
+    $('.image__slider').slick({
+      arrows: false,
+      infinite: true,
+      dots: true,
+      autoplay: false,
+      autoplaySpeed: 4000,
+      vertical: false,
+      verticalSwiping: false,
+    })
+  }
   $('.image__slider').slick({
     arrows: false,
     infinite: true,
