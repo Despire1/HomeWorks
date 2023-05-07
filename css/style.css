@@ -398,7 +398,10 @@
   justify-content: space-between;
 }
 
-.image__logo {}
+.image__logo img {
+  width: 60px;
+  height: 39px;
+}
 
 .image__content {
   /* display: flex;
@@ -680,7 +683,7 @@
   gap: 20px;
 }
 
-.app__icon {
+.app__icon img {
   width: 120px;
   height: 40px;
 }
