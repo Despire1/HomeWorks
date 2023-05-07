@@ -146,6 +146,7 @@ $(function () {
 
   $('.burger, .overlay, .header__top a').on('click', function (e) {
     e.preventDefault()
+    $('.burger').toggleClass('burger-open')
     $('.header__top').toggleClass('header__top-open')
     if ($(window).width() < 480) {
       if ($('.header__top').hasClass('header__top-open')) {
@@ -155,6 +156,12 @@ $(function () {
       }
     }
     $('.overlay').toggleClass('overlay-show')
+    if ($('.header__top').hasClass('header__top-open')) {
+      $('body, html').css('overflow', 'hidden')
+    } else {
+      $('body, html').css('overflow', 'visible')
+    }
   })
+
 
 })

@@ -1352,10 +1352,25 @@
     background: #3a3939;
     position: relative;
     margin-bottom: 4px;
+    transition: all .1s;
   }
+
 
   .burger span:last-child {
     margin-bottom: 0px;
+  }
+
+  .burger-open span {
+    margin-bottom: 0;
+  }
+  .burger-open span:first-child {
+    transform: translateY(1.5px) rotate(45deg);
+  }
+  .burger-open span:nth-child(2) {
+    display: none;
+  }
+  .burger-open span:last-child {
+    transform: translateY(-1.5px) rotate(-45deg);
   }
 
   .header__body-title {
