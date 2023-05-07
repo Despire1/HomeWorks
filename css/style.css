@@ -382,7 +382,7 @@
 .image {}
 
 .image__wrapper {
-  background: url('../images/center-img.jpg') 0 0 / cover no-repeat;
+  background: url('../images/center-img.webp') 0 0 / cover no-repeat;
   height: 600px;
   position: relative;
 }
@@ -482,11 +482,11 @@
 }
 
 .img-1 {
-  background: url("../images/design-1.jpg") 0 0 / 100% no-repeat;
+  background: url("../images/design-1.webp") 0 0 / 100% no-repeat;
 }
 
 .img-2 {
-  background: url("../images/design-2.jpg") 0 0 / 100% no-repeat;
+  background: url("../images/design-2.webp") 0 0 / 100% no-repeat;
 }
 
 .design__image-content-mb {
@@ -700,7 +700,7 @@
 .image-slide {}
 
 .image-slide__wrapper {
-  background: url('../images/bottom-main-img.jpg') 0 0 no-repeat;
+  background: url('../images/bottom-main-img.webp') 0 0 no-repeat;
   background-size: cover;
   height: 600px;
   position: relative;
@@ -1444,7 +1444,7 @@
 
   .image__wrapper {
     height: 420px;
-    background: url('../images/center-img.jpg') 0px 0px / cover no-repeat;
+    background: url('../images/center-img.webp') 0px 0px / cover no-repeat;
   }
 
   .image__inner {
@@ -1627,7 +1627,7 @@
 
   .image-slide__wrapper {
     height: 420px;
-    background: url('../images/bottom-main-img.jpg') -331px 0px / cover no-repeat;
+    background: url('../images/bottom-main-img.webp') -331px 0px / cover no-repeat;
   }
 
   .image-slide__inner {
@@ -1776,7 +1776,7 @@
 
   /* --------------------------------------------------- */
   .image-slide__wrapper {
-    background: url('../images/bottom-main-img.jpg') -480px 0px / cover no-repeat;
+    background: url('../images/bottom-main-img.webp') -480px 0px / cover no-repeat;
   }
 
   /* --------------------------------------------------- */
@@ -1790,7 +1790,7 @@
 @media (max-width: 800px) {
   .image__wrapper {
     height: 420px;
-    background: url('../images/center-img.jpg') -195px 0px / cover no-repeat;
+    background: url('../images/center-img.webp') -195px 0px / cover no-repeat;
   }
 }
 
@@ -1856,7 +1856,7 @@
   }
 
   .image-slide__inner {
-    background: url('../images/bottom-main-img.jpg') -111px 0px / 778px 384px no-repeat;
+    background: url('../images/bottom-main-img.webp') -111px 0px / 778px 384px no-repeat;
     position: relative;
   }
 
@@ -2172,7 +2172,7 @@
 
   .image__wrapper {
     height: 420px;
-    background: url('../images/center-img.jpg') -370px 0px / cover no-repeat;
+    background: url('../images/center-img.webp') -370px 0px / cover no-repeat;
   }
 
   .image__title {
@@ -2214,7 +2214,7 @@
 
   /* ----------------------------------------------------- */
   .image-slide__inner {
-    background: url('../images/bottom-main-img.jpg') -305px 0px / 778px 384px no-repeat;
+    background: url('../images/bottom-main-img.webp') -305px 0px / 778px 384px no-repeat;
   }
 
   .image-slide__title {
