@@ -802,6 +802,10 @@
   margin-bottom: 30px;
 }
 
+.mb-slide {
+  display: none;
+}
+
 .reviews__slider {
   margin-bottom: 30px;
 }
@@ -995,6 +999,9 @@
   /* transform: translateY(-50%) rotate(-90deg); */
   transition: all .4s;
   transform: rotate(-90deg);
+  display: block;
+  width: 24px;
+  height: 24px;
 }
 
 .questions__arrow path {
@@ -1002,8 +1009,8 @@
 }
 
 .questions__arrow svg {
-  width: 100%;
-  height: 100%;
+  width: 24px;
+  height: 24px;
 }
 
 .questions__item--active .questions__arrow {
@@ -1621,6 +1628,123 @@
     line-height: 160%;
   }
 
+  /* -------------------------------------------------- */
+  .main__questions {
+    padding-bottom: 80px;
+  }
+
+  .questions__inner {
+    flex-direction: column;
+  }
+
+  .questions__content {
+    margin-bottom: 80px;
+    margin-right: 0;
+  }
+
+  .questions__content-title {
+    font-size: 30px;
+    line-height: 110%;
+  }
+
+  .questions__content-title br {
+    display: none;
+  }
+
+  .questions__content-text {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 160%;
+  }
+
+  .questions__content-text br {
+    display: none;
+  }
+
+  br.mb-q {
+    display: inline;
+  }
+
+  .questions__list {
+    max-width: none;
+  }
+
+  /* -------------------------------------------------- */
+  .sale__inner, .sale__inner-bl {
+    height: 420px;
+    padding: 40px;
+    position: relative;
+  }
+
+  .sale__content {
+    position: relative;
+    z-index: 10;
+  }
+
+  .sale__inner::after,
+  .sale__inner-bl::after {
+    display: none;
+  }
+
+  .sale__body-filter-wh,
+  .sale__body-filter-bl {
+    position: relative;
+  }
+
+  .sale__body-filter-wh::before,
+  .sale__body-filter-bl::before {
+    content: "";
+    position: absolute;
+    width: 710px;
+    height: 484px;
+    top: -238px;
+    right: -612px;
+    background: url("../images/btm-bike.svg") 0 0 / 100% no-repeat, url("../images/btm-bike-bl.svg") 0 0 /100% no-repeat;
+    background-blend-mode: normal, multiply;
+    z-index: -1;
+  }
+
+  .sale__body-filter-bl::before {
+    background-blend-mode: multiply, normal;
+  }
+
+  .sale__content-title,
+  .sale__content-price {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 110%;
+  }
+
+  .sale__complect {
+    display: none;
+  }
+
+  /* -------------------------------------------------- */
+  .footer__inner {
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    font-size: 14px;
+    line-height: 160%;
+    padding: 20px;
+  }
+
+  .footer__left {
+    margin-bottom: 10px;
+  }
+
+  .footer__left-text {
+    margin-bottom: 10px;
+  }
+
+  .footer__right {
+    align-items: center;
+  }
+
+  .footer__tel {
+    margin-bottom: 10px;
+  }
+
 }
 
 /* ===================================960===================================== */
@@ -1639,6 +1763,12 @@
   .image-slide__wrapper {
     background: url('../images/bottom-main-img.jpg') -480px 0px / cover no-repeat;
   }
+
+  /* --------------------------------------------------- */
+  .reviews__slide {
+    min-width: 415px;
+  }
+
 }
 
 /* ===================================800===================================== */
@@ -1702,9 +1832,8 @@
   }
 
   /* ---------------------------------------------------- */
-  .main__image-sliders {
-    
-  }
+  .main__image-sliders {}
+
   .image-slide__wrapper {
     background: #151515;
     height: 525px;
@@ -1781,6 +1910,157 @@
     opacity: 1;
   }
 
+  /* --------------------------------------------------- */
+  .reviews__title {
+    font-size: 25px;
+    line-height: 120%;
+    color: var(--wh-to-bl);
+  }
+
+  .reviews__slider {
+    margin-bottom: 0px;
+  }
+
+  .reviews__slide {
+    min-width: auto;
+    /* width: 100%; */
+    margin: 0 15px;
+    padding: 0;
+  }
+
+  .slide-trash {
+    display: none;
+  }
+
+  .reviews__slider .slick-list {
+    margin: 0 -15px;
+  }
+
+  .reviews__slide__name {
+    font-size: 16px;
+  }
+
+  .reviews__slide-text {
+    font-size: 12px;
+    line-height: 170%;
+  }
+
+  .reviews__arrows {
+    display: none;
+  }
+
+  .reviews__slider {
+    position: relative;
+  }
+
+  .reviews__slider .slick-dots {
+    position: relative;
+    top: 0;
+    transform: translateX(0);
+    left: 0;
+    width: 90px;
+    margin: 40px auto;
+    gap: 0;
+  }
+
+  .reviews__slider .slick-dots button {
+    background: var(--wh-to-bl);
+  }
+
+  .reviews__btn-box {
+    max-width: none;
+    width: 100%;
+  }
+
+  .reviews__btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* -------------------------------------------------- */
+  .questions__btn-box {
+    max-width: none;
+    width: 100%;
+  }
+
+  .questions__btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* -------------------------------------------------- */
+  .sale__inner {
+    flex-direction: column;
+    height: max-content;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .sale__body-filter-wh::before,
+  .sale__body-filter-bl::before {
+    display: none;
+  }
+
+  .sale__content {
+    width: 100%;
+  }
+
+  .sale__content-title {
+    margin-bottom: 10px;
+  }
+
+  .sale__content-price {
+    margin-bottom: 15px;
+  }
+
+  .sale__content-title,
+  .sale__content-price {
+    font-size: 25px;
+    line-height: 120%;
+  }
+
+  .mb-bike-box {
+    width: 300px;
+    height: 260px;
+    margin: 20px auto;
+  }
+
+  .mb-bike-box-wh,
+  .mb-bike-box-bl {
+    /* background: url("../images/btm-bike.svg") 0 0 / 100% no-repeat, url("../images/btm-bike-bl.svg") 0 0 /100% no-repeat; */
+    background: url(../images/btm-bike.svg) -33px 0 / cover no-repeat, url(../images/btm-bike-bl.svg) -33px 0 /cover no-repeat;
+    background-blend-mode: normal, multiply;
+  }
+
+  .mb-bike-box-bl {
+    background-blend-mode: multiply, normal;
+  }
+
+  .sale__filter-wrapper {
+    max-width: none;
+    width: 100%;
+  }
+
+  .sale__body-filter {
+    margin: 0 auto;
+  }
+
+  .sale__btn-box {
+    max-width: none;
+    width: 100%;
+  }
+
+  .sale__btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* -------------------------------------------------- */
+  .footer__inner {
+    font-size: 12px;
+    line-height: 170%;
+  }
 }
 
 /* ===================================480===================================== */
@@ -1916,12 +2196,38 @@
     font-size: 12px;
     line-height: 170%;
   }
+
   /* ----------------------------------------------------- */
   .image-slide__inner {
     background: url('../images/bottom-main-img.jpg') -305px 0px / 778px 384px no-repeat;
   }
+
   .image-slide__title {
     margin-bottom: 20px;
   }
 
+  /* ----------------------------------------------------- */
+  .mb-slide {
+    display: inline;
+  }
+
+  /* ----------------------------------------------------- */
+  .questions__content-title {
+    font-size: 25px;
+    line-height: 120%;
+  }
+
+  .questions__content-text {
+    font-size: 12px;
+    line-height: 170%;
+  }
+
+  .questions__head-text {
+    font-size: 16px;
+  }
+
+  /* ----------------------------------------------------- */
+  .mb-bike-box {
+    margin: 20px -25px;
+  }
 }

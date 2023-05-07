@@ -24,6 +24,10 @@ $(function () {
       $('.app__image-box-wh').css('display', 'none')
       $('.header__body-filter').removeClass('header__body-filter-bl')
       $('.header__body-filter').addClass('header__body-filter-wh')
+      $('.sale__body-filter').removeClass('sale__body-filter-bl')
+      $('.sale__body-filter').addClass('sale__body-filter-wh')
+      $('.mb-bike-box').removeClass('mb-bike-box-bl')
+      $('.mb-bike-box').addClass('mb-bike-box-wh')
     } else if ($('.filter-black').hasClass('filter-btn--active')) {
       $('.container').removeClass('container-wh')
       $('.container').addClass('container-bl')
@@ -37,6 +41,10 @@ $(function () {
       $('.app__image-box-wh').css('display', 'block')
       $('.header__body-filter').removeClass('header__body-filter-wh')
       $('.header__body-filter').addClass('header__body-filter-bl')
+      $('.sale__body-filter').removeClass('sale__body-filter-wh')
+      $('.sale__body-filter').addClass('sale__body-filter-bl')
+      $('.mb-bike-box').removeClass('mb-bike-box-wh')
+      $('.mb-bike-box').addClass('mb-bike-box-bl')
     }
   })
   if ($(window).width() > 1100) {
@@ -89,6 +97,20 @@ $(function () {
     arrows: false,
     infinite: true,
     slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 960,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          dots: true,
+        }
+      }]
   })
 
   $('.reviews__arrow--prev').on('click', function (e) {
