@@ -16,7 +16,7 @@
   font-weight: 400;
   line-height: 150%;
   color: #F1F1F1;
-  background: var(--bg-color) url("../images/bg-elipse.svg") no-repeat;
+  background: var(--bg-color) url("../images/bg-elipse.webp") no-repeat;
   background-size: cover;
   background-position: -160px -585px;
 }
@@ -36,7 +36,7 @@
   padding-bottom: 120px;
   position: relative;
   z-index: 0;
-  /* background: url("../images/specs--bg-line.svg") no-repeat;
+  /* background: url("../images/specs--bg-line.webp") no-repeat;
   background-size: cover;
   background-position: -20px 572px;
   overflow: hidden; */
@@ -44,7 +44,7 @@
 
 /* .main__specs::before { 
   content: "";
-  background: url("../images/specs--bg-line.svg") 10px 0 no-repeat;
+  background: url("../images/specs--bg-line.webp") 10px 0 no-repeat;
   width: 1522px;
   height: 945px;
   right: -31px;
@@ -97,7 +97,7 @@
   right: -881px;
   width: 1946px;
   height: 1329px;
-  background: url("../images/top-bike.svg") 0 0 / 100% no-repeat, url("../images/top-bike-bl.svg") 0 0 / 100% no-repeat;
+  background: url("../images/top-bike.webp") 0 0 / 100% no-repeat, url("../images/top-bike-bl.webp") 0 0 / 100% no-repeat;
   z-index: -1;
   background-blend-mode: normal, multiply;
 }
@@ -242,7 +242,7 @@
 
 .main__specs .container::before {
   content: "";
-  background: url("../images/specs--bg-line.svg") 10px 0 no-repeat;
+  background: url("../images/specs--bg-line.webp") 10px 0 no-repeat;
   width: 1522px;
   height: 945px;
   right: -181px;
@@ -438,7 +438,7 @@
   content: "";
   top: -259px;
   right: -1631.4px;
-  background: url("../images/design-top-line.svg") 0 0 no-repeat;
+  background: url("../images/design-top-line.webp") 0 0 no-repeat;
   width: 1756px;
   height: 1134px;
   position: absolute;
@@ -449,7 +449,7 @@
   content: "";
   bottom: -920px;
   left: -1575px;
-  background: url("../images/design-btm-line.svg") 0 0 no-repeat;
+  background: url("../images/design-btm-line.webp") 0 0 no-repeat;
   width: 1756px;
   height: 1134px;
   position: absolute;
@@ -522,7 +522,7 @@
   right: -151px;
   width: 620px;
   height: 530px;
-  background: url("../images/safety-btm-line-2.svg") no-repeat;
+  background: url("../images/safety-btm-line-2.webp") no-repeat;
   z-index: -1;
 }
 
@@ -783,7 +783,7 @@
   content: "";
   top: -259px;
   right: -1631.4px;
-  background: url("../images/design-top-line.svg") 0 0 no-repeat;
+  background: url("../images/design-top-line.webp") 0 0 no-repeat;
   width: 1756px;
   height: 1134px;
   position: absolute;
@@ -1042,7 +1042,7 @@
   left: -48px;
   width: 1667px;
   height: 814px;
-  background: url("../images/sale-bg-line.svg") 0 0 no-repeat;
+  background: url("../images/sale-bg-line.webp") 0 0 no-repeat;
 }
 
 .sale {}
@@ -1066,7 +1066,7 @@
   height: 660px;
   top: -110px;
   right: -130px;
-  background: url("../images/btm-bike.svg") 0 0 no-repeat, url("../images/btm-bike-bl.svg") 0 0 no-repeat;
+  background: url("../images/btm-bike.webp") 0 0 no-repeat, url("../images/btm-bike-bl.webp") 0 0 no-repeat;
   background-blend-mode: normal, multiply;
 }
 
@@ -1244,7 +1244,7 @@
     right: -1527px;
     width: 1946px;
     height: 1329px;
-    background: url("../images/top-bike.svg") 0 0 / 100% no-repeat, url("../images/top-bike-bl.svg") 0 0 / 100% no-repeat;
+    background: url("../images/top-bike.webp") 0 0 / 100% no-repeat, url("../images/top-bike-bl.webp") 0 0 / 100% no-repeat;
     z-index: -10;
     background-blend-mode: normal, multiply;
   }
@@ -1714,7 +1714,7 @@
     height: 484px;
     top: -238px;
     right: -612px;
-    background: url("../images/btm-bike.svg") 0 0 / 100% no-repeat, url("../images/btm-bike-bl.svg") 0 0 /100% no-repeat;
+    background: url("../images/btm-bike.webp") 0 0 / 100% no-repeat, url("../images/btm-bike-bl.webp") 0 0 /100% no-repeat;
     background-blend-mode: normal, multiply;
     z-index: -1;
   }
@@ -2043,8 +2043,8 @@
 
   .mb-bike-box-wh,
   .mb-bike-box-bl {
-    /* background: url("../images/btm-bike.svg") 0 0 / 100% no-repeat, url("../images/btm-bike-bl.svg") 0 0 /100% no-repeat; */
-    background: url(../images/btm-bike.svg) -33px 0 / cover no-repeat, url(../images/btm-bike-bl.svg) -33px 0 /cover no-repeat;
+    /* background: url("../images/btm-bike.webp") 0 0 / 100% no-repeat, url("../images/btm-bike-bl.webp") 0 0 /100% no-repeat; */
+    background: url(../images/btm-bike.webp) -33px 0 / cover no-repeat, url(../images/btm-bike-bl.webp) -33px 0 /cover no-repeat;
     background-blend-mode: normal, multiply;
   }
 
@@ -2120,7 +2120,7 @@
     right: -441px;
     width: 847px;
     height: 579px;
-    background: url("../images/top-bike.svg") 0 0 / contain no-repeat, url("../images/top-bike-bl.svg") 0 0 / contain no-repeat;
+    background: url("../images/top-bike.webp") 0 0 / contain no-repeat, url("../images/top-bike-bl.webp") 0 0 / contain no-repeat;
     z-index: -10;
     background-blend-mode: normal, multiply;
   }
