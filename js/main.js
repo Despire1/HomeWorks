@@ -1,5 +1,5 @@
 $(function () {
-
+  
   $('.filter-btn').on('click', function (e) {
     e.preventDefault()
     if ($(this).hasClass('filter-btn--active') === false) {

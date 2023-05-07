@@ -680,7 +680,10 @@
   gap: 20px;
 }
 
-.app__icon {}
+.app__icon {
+  width: 120px;
+  height: 40px;
+}
 
 .app__image-box {}
 
@@ -1292,6 +1295,8 @@
 
   .header__top-logo {
     display: none;
+    width: 60px;
+    height: 39px;
   }
 
   .header__top--nav-menu {
