@@ -62,17 +62,7 @@ if (document.documentElement.clientWidth > 1100) {
   }))
 }
 
-// // if (document.querySelector(window).width() < 640) {
-// //   document.querySelector('.image__slider').slick({
-// //     arrows: false,
-// //     infinite: true,
-// //     dots: true,
-// //     autoplay: false,
-// //     autoplaySpeed: 4000,
-// //     vertical: false,
-// //     verticalSwiping: false,
-// //   })
-// // }
+
 var swiper = new Swiper('.slider1', {
   pagination: {
     el: '.swiper-pagination',
@@ -87,8 +77,6 @@ var swiper = new Swiper('.slider1', {
       direction: "horizontal"
     }
   }
-  // perPage: 1,
-
 });
 
 var swiper2 = new Swiper('.slider2', {
@@ -122,29 +110,31 @@ var swiper2 = new Swiper('.slider2', {
 
 });
 
+const anchors = document.querySelectorAll('a[href*="#"]')
 
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href').substr(1)
+    
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
 
 document.querySelectorAll('.questions__item-link').forEach(el => el.addEventListener('click', e => {
   e.preventDefault()
   if (e.currentTarget.classList.contains('questions__item--active')) {
     e.currentTarget.classList.remove('questions__item--active')
-    e.currentTarget.children('.questions__item-text').slideUp('questions__item-text')
   } else {
-    document.querySelector('.questions__item-link').classList.remove('questions__item--active')
-    document.querySelector('.questions__item-text').slideUp()
+    document.querySelectorAll('.questions__item-link').forEach(el => el.classList.remove('questions__item--active'))
     e.currentTarget.classList.add('questions__item--active')
-    e.currentTarget.children('.questions__item-text').slideDown('questions__item-text')
   }
 }))
 
-// document.querySelectorAll('.header__top-link, .header__btn').forEach(el => el.addEventListener('click', e => {
-//   e.preventDefault()
-//   var id = el.currentTarget.attr('href'),
-
-//     top = document.querySelector(id).offset().top - 15
-
-//   document.querySelector('body,html').animate({ scrollTop: top }, 1000)
-// }))
 
 document.querySelectorAll('.burger, .overlay, .header__top a').forEach(el => el.addEventListener('click', e => {
   e.preventDefault()
