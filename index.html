@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="fonts/fonts.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
@@ -15,11 +15,11 @@
 <body>
   <div class="wrapper">
     <div class="overlay"></div>
-    <a class="burger" href="#">
+    <button type="button" class="burger" href="#">
       <span></span>
       <span></span>
       <span></span>
-    </a>
+    </button>
     <header class="header">
       <div class="header__logo--show">
         <a href="/">
@@ -62,8 +62,8 @@
             <p class="header__body-text">Улучшенная производительность для дальних путешествий. <br> Работает так же
               просто,<br> как и выглядит.</p>
             <div class="header__body-filter header__body-filter-wh filter">
-              <a href="#" class="header__filter-btn filter-btn filter-white filter-btn--active">Белый</a>
-              <a href="#" class="header__filter-btn filter-btn filter-black">Черный</a>
+              <a href="" class="header__filter-btn filter-btn filter-white filter-btn--active">Белый</a>
+              <a href="" class="header__filter-btn filter-btn filter-black">Черный</a>
             </div>
           </div>
         </div>
@@ -82,21 +82,21 @@
                 <p class="specs__row-text">Три режима езды позволяют почуствовать себя <br> комфортно в любой ситуации.
                   Режим «S» увеличитвает скорость, если опаздываете на работу. <br> Во время прогулки по парку
                   активируйте режим «D». Включите режим «Пешеход», когда двигаетесь <br> по оживлённой улице.</p>
-                  <div class="specs__row-box"><img src="images/specs-1.webp" alt=""></div>
+                <div class="specs__row-box"><img src="images/specs-1.webp" alt=""></div>
               </li>
               <li class="specs__row-item">
                 <h5 class="specs__row-title">Система восстановления энергии</h5>
                 <span></span>
                 <p class="specs__row-text">Во время торможения и движения по инерции система преобразовывает
                   кинетическую энергию <br> в электрическую, позволяя увеличить общий <br> запас хода самоката.</p>
-                  <div class="specs__row-box"><img src="images/specs-mobile-2.webp" alt=""></div>
+                <div class="specs__row-box"><img src="images/specs-mobile-2.webp" alt=""></div>
               </li>
               <li class="specs__row-item">
                 <h5 class="specs__row-title">Мощная батарея</h5>
                 <span></span>
                 <p class="specs__row-text">Самокат оснащен аккумулятором емкостью <br> 12 800 мАч. Это позволяет
                   преодолевать расстояния <br> до 45 км без подзарядки.</p>
-                  <div class="specs__row-box"><img src="images/specs-mobile-3.webp" alt=""></div>
+                <div class="specs__row-box"><img src="images/specs-mobile-3.webp" alt=""></div>
               </li>
             </ul>
             <div class="specs__img-row">
@@ -144,7 +144,8 @@
               <div class="design__image-box img-2">
                 <div class="design__image-content">
                   <h6 class="design__image-title">Удобная панель управления</h6>
-                  <p class="design__image-text">Удобно расположенные элементы управления. Отображение <br> 8 типов данных
+                  <p class="design__image-text">Удобно расположенные элементы управления. Отображение <br> 8 типов
+                    данных
                     в реальном времени: скорость, режим, заряд аккумулятора, состояние блокировки и другая информация.
                   </p>
                 </div>
@@ -169,14 +170,14 @@
                 <span></span>
                 <p class="safety__row-text">Продуманный угол рассеивания света позволяет сохранять хорошую видимость, не
                   ослепляя других участников движения.</p>
-                  <div class="safety__row-box"><img src="images/safety-1.webp" alt=""></div>
+                <div class="safety__row-box"><img src="images/safety-1.webp" alt=""></div>
               </li>
               <li class="safety__row-item">
                 <h5 class="safety__row-title">Двойная тормозная система</h5>
                 <span></span>
                 <p class="safety__row-text">При нажатии наручку тормоза системы переднего и заднего колеса активируются
                   последовательно, сокращая тормозной путь <br> и обеспечивая безопасную и плавную остановку.</p>
-                  <div class="safety__row-box"><img src="images/safety-mb-2.webp" alt=""></div>
+                <div class="safety__row-box"><img src="images/safety-mb-2.webp" alt=""></div>
               </li>
               <li class="safety__row-item">
                 <h5 class="safety__row-title">Яркая задняя <br> фара</h5>
@@ -190,8 +191,9 @@
                 <h5 class="safety__row-title">Отражатели спереди, сбоку и сзади</h5>
                 <span></span>
                 <p class="safety__row-text">Улучшенные отражатели, размещенные с четырех сторон, делают вашу поездку
-                  <br> в темное время суток безопаснее.</p>
-                  <div class="safety__row-box"><img src="images/safety-bg-4.webp" alt=""></div>
+                  <br> в темное время суток безопаснее.
+                </p>
+                <div class="safety__row-box"><img src="images/safety-bg-4.webp" alt=""></div>
               </li>
             </ul>
             <div class="safety__img-row">
@@ -220,140 +222,152 @@
         </div>
       </section>
       <section class="main__image-sliders image-sliders">
-        <div class="image__slider">
-          <div class="image-slide__wrapper">
-            <div class="image-slide__inner">
-              <div class="image-slide__logo">
-                <svg width="60" height="39" viewBox="0 0 60 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M59.3689 0C59.7139 0 60 0.281934 60 0.629353V38.3743C60 38.7162 59.7139 39 59.3689 39H51.2391C50.8904 39 50.6079 38.7162 50.6079 38.3743V0.629353C50.6079 0.281934 50.8904 0 51.2391 0H59.3689ZM24.0926 0C30.2253 0 36.6369 0.285574 39.798 3.50511C42.909 6.6736 43.2446 12.9812 43.2573 19.1066L43.2576 38.3743C43.2576 38.7162 42.9752 39 42.6265 39H34.5003C34.1516 39 33.8673 38.7162 33.8673 38.3743V18.7751C33.8584 15.3537 33.6653 11.8377 31.931 10.0679C30.4381 8.5454 27.6524 8.19617 24.7559 8.12341H10.0232C9.67639 8.12341 9.39388 8.40716 9.39388 8.74912V38.3743C9.39388 38.7162 9.10782 39 8.76095 39H0.627567C0.280704 39 0 38.7162 0 38.3743V0.629353C0 0.281934 0.280704 0 0.627567 0H24.0926ZM25.9128 15.0318C26.2578 15.0318 26.5385 15.3137 26.5385 15.6575V38.3743C26.5385 38.7162 26.2578 39 25.9128 39H17.3735C17.0231 39 16.7406 38.7162 16.7406 38.3743V15.6575C16.7406 15.3137 17.0231 15.0318 17.3735 15.0318H25.9128Z"
-                    fill="#F1F1F1" />
-                </svg>
-
+        <div class="swiper slider1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="image-slide__wrapper">
+                <div class="image-slide__inner">
+                  <div class="image-slide__logo">
+                    <svg width="60" height="39" viewBox="0 0 60 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M59.3689 0C59.7139 0 60 0.281934 60 0.629353V38.3743C60 38.7162 59.7139 39 59.3689 39H51.2391C50.8904 39 50.6079 38.7162 50.6079 38.3743V0.629353C50.6079 0.281934 50.8904 0 51.2391 0H59.3689ZM24.0926 0C30.2253 0 36.6369 0.285574 39.798 3.50511C42.909 6.6736 43.2446 12.9812 43.2573 19.1066L43.2576 38.3743C43.2576 38.7162 42.9752 39 42.6265 39H34.5003C34.1516 39 33.8673 38.7162 33.8673 38.3743V18.7751C33.8584 15.3537 33.6653 11.8377 31.931 10.0679C30.4381 8.5454 27.6524 8.19617 24.7559 8.12341H10.0232C9.67639 8.12341 9.39388 8.40716 9.39388 8.74912V38.3743C9.39388 38.7162 9.10782 39 8.76095 39H0.627567C0.280704 39 0 38.7162 0 38.3743V0.629353C0 0.281934 0.280704 0 0.627567 0H24.0926ZM25.9128 15.0318C26.2578 15.0318 26.5385 15.3137 26.5385 15.6575V38.3743C26.5385 38.7162 26.2578 39 25.9128 39H17.3735C17.0231 39 16.7406 38.7162 16.7406 38.3743V15.6575C16.7406 15.3137 17.0231 15.0318 17.3735 15.0318H25.9128Z"
+                        fill="#F1F1F1" />
+                    </svg>
+    
+                  </div>
+                  <div class="image-slide__content">
+                    <h4 class="image-slide__title">О бренде Xiaomi</h4>
+                    <p class="image-slide__text">Компания Xiaomi была основана предпринимателем Лей Цзюнем <br> в 2010 году
+                      под девизом - «Инновации для всех».
+                      <br>
+                      <br>
+                      Мы верим, что высококачественные продукты и передовые технологии должны быть доступны каждому.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="image-slide__content">
-                <h4 class="image-slide__title">О бренде Xiaomi</h4>
-                <p class="image-slide__text">Компания Xiaomi была основана предпринимателем Лей Цзюнем <br> в 2010 году
-                  под девизом - «Инновации для всех».
-                  <br>
-                  <br>
-                  Мы верим, что высококачественные продукты и передовые технологии должны быть доступны каждому.
-                </p>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-slide__wrapper">
+                <div class="image-slide__inner">
+                  <div class="image-slide__logo">
+                    <svg width="60" height="39" viewBox="0 0 60 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M59.3689 0C59.7139 0 60 0.281934 60 0.629353V38.3743C60 38.7162 59.7139 39 59.3689 39H51.2391C50.8904 39 50.6079 38.7162 50.6079 38.3743V0.629353C50.6079 0.281934 50.8904 0 51.2391 0H59.3689ZM24.0926 0C30.2253 0 36.6369 0.285574 39.798 3.50511C42.909 6.6736 43.2446 12.9812 43.2573 19.1066L43.2576 38.3743C43.2576 38.7162 42.9752 39 42.6265 39H34.5003C34.1516 39 33.8673 38.7162 33.8673 38.3743V18.7751C33.8584 15.3537 33.6653 11.8377 31.931 10.0679C30.4381 8.5454 27.6524 8.19617 24.7559 8.12341H10.0232C9.67639 8.12341 9.39388 8.40716 9.39388 8.74912V38.3743C9.39388 38.7162 9.10782 39 8.76095 39H0.627567C0.280704 39 0 38.7162 0 38.3743V0.629353C0 0.281934 0.280704 0 0.627567 0H24.0926ZM25.9128 15.0318C26.2578 15.0318 26.5385 15.3137 26.5385 15.6575V38.3743C26.5385 38.7162 26.2578 39 25.9128 39H17.3735C17.0231 39 16.7406 38.7162 16.7406 38.3743V15.6575C16.7406 15.3137 17.0231 15.0318 17.3735 15.0318H25.9128Z"
+                        fill="#F1F1F1" />
+                    </svg>
+    
+                  </div>
+                  <div class="image-slide__content">
+                    <h4 class="image-slide__title">О бренде Xiaomi</h4>
+                    <p class="image-slide__text">Компания Xiaomi была основана предпринимателем Лей Цзюнем <br> в 2010 году
+                      под девизом - «Инновации для всех».
+                      <br>
+                      <br>
+                      Мы верим, что высококачественные продукты и передовые технологии должны быть доступны каждому.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-slide__wrapper">
+                <div class="image-slide__inner">
+                  <div class="image-slide__logo">
+                    <svg width="60" height="39" viewBox="0 0 60 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M59.3689 0C59.7139 0 60 0.281934 60 0.629353V38.3743C60 38.7162 59.7139 39 59.3689 39H51.2391C50.8904 39 50.6079 38.7162 50.6079 38.3743V0.629353C50.6079 0.281934 50.8904 0 51.2391 0H59.3689ZM24.0926 0C30.2253 0 36.6369 0.285574 39.798 3.50511C42.909 6.6736 43.2446 12.9812 43.2573 19.1066L43.2576 38.3743C43.2576 38.7162 42.9752 39 42.6265 39H34.5003C34.1516 39 33.8673 38.7162 33.8673 38.3743V18.7751C33.8584 15.3537 33.6653 11.8377 31.931 10.0679C30.4381 8.5454 27.6524 8.19617 24.7559 8.12341H10.0232C9.67639 8.12341 9.39388 8.40716 9.39388 8.74912V38.3743C9.39388 38.7162 9.10782 39 8.76095 39H0.627567C0.280704 39 0 38.7162 0 38.3743V0.629353C0 0.281934 0.280704 0 0.627567 0H24.0926ZM25.9128 15.0318C26.2578 15.0318 26.5385 15.3137 26.5385 15.6575V38.3743C26.5385 38.7162 26.2578 39 25.9128 39H17.3735C17.0231 39 16.7406 38.7162 16.7406 38.3743V15.6575C16.7406 15.3137 17.0231 15.0318 17.3735 15.0318H25.9128Z"
+                        fill="#F1F1F1" />
+                    </svg>
+    
+                  </div>
+                  <div class="image-slide__content">
+                    <h4 class="image-slide__title">О бренде Xiaomi</h4>
+                    <p class="image-slide__text">Компания Xiaomi была основана предпринимателем Лей Цзюнем <br> в 2010 году
+                      под девизом - «Инновации для всех».
+                      <br>
+                      <br>
+                      Мы верим, что высококачественные продукты и передовые технологии должны быть доступны каждому.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="image-slide__wrapper">
-            <div class="image-slide__inner">
-              <div class="image-slide__logo">
-                <svg width="60" height="39" viewBox="0 0 60 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M59.3689 0C59.7139 0 60 0.281934 60 0.629353V38.3743C60 38.7162 59.7139 39 59.3689 39H51.2391C50.8904 39 50.6079 38.7162 50.6079 38.3743V0.629353C50.6079 0.281934 50.8904 0 51.2391 0H59.3689ZM24.0926 0C30.2253 0 36.6369 0.285574 39.798 3.50511C42.909 6.6736 43.2446 12.9812 43.2573 19.1066L43.2576 38.3743C43.2576 38.7162 42.9752 39 42.6265 39H34.5003C34.1516 39 33.8673 38.7162 33.8673 38.3743V18.7751C33.8584 15.3537 33.6653 11.8377 31.931 10.0679C30.4381 8.5454 27.6524 8.19617 24.7559 8.12341H10.0232C9.67639 8.12341 9.39388 8.40716 9.39388 8.74912V38.3743C9.39388 38.7162 9.10782 39 8.76095 39H0.627567C0.280704 39 0 38.7162 0 38.3743V0.629353C0 0.281934 0.280704 0 0.627567 0H24.0926ZM25.9128 15.0318C26.2578 15.0318 26.5385 15.3137 26.5385 15.6575V38.3743C26.5385 38.7162 26.2578 39 25.9128 39H17.3735C17.0231 39 16.7406 38.7162 16.7406 38.3743V15.6575C16.7406 15.3137 17.0231 15.0318 17.3735 15.0318H25.9128Z"
-                    fill="#F1F1F1" />
-                </svg>
-
-              </div>
-              <div class="image-slide__content">
-                <h4 class="image-slide__title">О бренде Xiaomi</h4>
-                <p class="image-slide__text">Компания Xiaomi была основана предпринимателем Лей Цзюнем <br> в 2010 году
-                  под девизом - «Инновации для всех».
-                  <br>
-                  <br>
-                  Мы верим, что высококачественные продукты и передовые технологии должны быть доступны каждому.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="image-slide__wrapper">
-            <div class="image-slide__inner">
-              <div class="image-slide__logo">
-                <svg width="60" height="39" viewBox="0 0 60 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M59.3689 0C59.7139 0 60 0.281934 60 0.629353V38.3743C60 38.7162 59.7139 39 59.3689 39H51.2391C50.8904 39 50.6079 38.7162 50.6079 38.3743V0.629353C50.6079 0.281934 50.8904 0 51.2391 0H59.3689ZM24.0926 0C30.2253 0 36.6369 0.285574 39.798 3.50511C42.909 6.6736 43.2446 12.9812 43.2573 19.1066L43.2576 38.3743C43.2576 38.7162 42.9752 39 42.6265 39H34.5003C34.1516 39 33.8673 38.7162 33.8673 38.3743V18.7751C33.8584 15.3537 33.6653 11.8377 31.931 10.0679C30.4381 8.5454 27.6524 8.19617 24.7559 8.12341H10.0232C9.67639 8.12341 9.39388 8.40716 9.39388 8.74912V38.3743C9.39388 38.7162 9.10782 39 8.76095 39H0.627567C0.280704 39 0 38.7162 0 38.3743V0.629353C0 0.281934 0.280704 0 0.627567 0H24.0926ZM25.9128 15.0318C26.2578 15.0318 26.5385 15.3137 26.5385 15.6575V38.3743C26.5385 38.7162 26.2578 39 25.9128 39H17.3735C17.0231 39 16.7406 38.7162 16.7406 38.3743V15.6575C16.7406 15.3137 17.0231 15.0318 17.3735 15.0318H25.9128Z"
-                    fill="#F1F1F1" />
-                </svg>
-
-              </div>
-              <div class="image-slide__content">
-                <h4 class="image-slide__title">О бренде Xiaomi</h4>
-                <p class="image-slide__text">Компания Xiaomi была основана предпринимателем Лей Цзюнем <br> в 2010 году
-                  под девизом - «Инновации для всех».
-                  <br>
-                  <br>
-                  Мы верим, что высококачественные продукты и передовые технологии должны быть доступны каждому.
-                </p>
-              </div>
-            </div>
-          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
       <section class="main__reviews reviews" id="reviews">
         <div class="container">
           <div class="reviews__inner">
             <div class="reviews__title">Отзывы <br class="mb-slide"> о Mi Scooter Pro 2</div>
-            <div class="reviews__slider">
-              <div class="reviews__slide">
-                <div class="reviews__slide-inner">
-                  <h5 class="reviews__slide__name">Михаил Сафонов
-                  </h5>
-                  <span></span>
-                  <p class="reviews__slide-text">Выбирал между двумя моделями: этим Mi Scooter Pro 2 <br> и Ninebot Max
-                    30P, в плюсах Макса - десятидюймовая резина и дальность пробега на одном заряде, скорость зарядки. В
-                    плюсах Xiaomi - Удобства переноски (вес аппарата, развесовка).
-                    <br>
-                    <br>
-                    В итоге купил Xiaomi и поставил 10 дюймовые шины - получил комфорт при небольшом весе самоката.
-                  </p>
+            <div class="swiper slider2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide ">
+                  <div class="reviews__slide-inner">
+                    <h5 class="reviews__slide__name">Михаил Сафонов
+                    </h5>
+                    <span></span>
+                    <p class="reviews__slide-text">Выбирал между двумя моделями: этим Mi Scooter Pro 2 <br> и Ninebot Max
+                      30P, в плюсах Макса - десятидюймовая резина и дальность пробега на одном заряде, скорость зарядки. В
+                      плюсах Xiaomi - Удобства переноски (вес аппарата, развесовка).
+                      <br>
+                      <br>
+                      В итоге купил Xiaomi и поставил 10 дюймовые шины - получил комфорт при небольшом весе самоката.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide ">
+                  <div class="reviews__slide-inner">
+                    <h5 class="reviews__slide__name">Михаил Сафонов
+                    </h5>
+                    <span></span>
+                    <p class="reviews__slide-text">Выбирал между двумя моделями: этим Mi Scooter Pro 2 <br> и Ninebot Max
+                      30P, в плюсах Макса - десятидюймовая резина и дальность пробега на одном заряде, скорость зарядки. В
+                      плюсах Xiaomi - Удобства переноски (вес аппарата, развесовка).
+                      <br>
+                      <br>
+                      В итоге купил Xiaomi и поставил 10 дюймовые шины - получил комфорт при небольшом весе самоката.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide ">
+                  <div class="reviews__slide-inner">
+                    <h5 class="reviews__slide__name">Михаил Сафонов
+                    </h5>
+                    <span></span>
+                    <p class="reviews__slide-text">Выбирал между двумя моделями: этим Mi Scooter Pro 2 <br> и Ninebot Max
+                      30P, в плюсах Макса - десятидюймовая резина и дальность пробега на одном заряде, скорость зарядки. В
+                      плюсах Xiaomi - Удобства переноски (вес аппарата, развесовка).
+                      <br>
+                      <br>
+                      В итоге купил Xiaomi и поставил 10 дюймовые шины - получил комфорт при небольшом весе самоката.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide ">
+                  <div class="reviews__slide-inner">
+                    <h5 class="reviews__slide__name">Михаил Сафонов
+                    </h5>
+                    <span></span>
+                    <p class="reviews__slide-text">Выбирал между двумя моделями: этим Mi Scooter Pro 2 <br> и Ninebot Max
+                      30P, в плюсах Макса - десятидюймовая резина и дальность пробега на одном заряде, скорость зарядки. В
+                      плюсах Xiaomi - Удобства переноски (вес аппарата, развесовка).
+                      <br>
+                      <br>
+                      В итоге купил Xiaomi и поставил 10 дюймовые шины - получил комфорт при небольшом весе самоката.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="reviews__slide">
-                <div class="reviews__slide-inner">
-                  <h5 class="reviews__slide__name">Михаил Сафонов
-                  </h5>
-                  <span></span>
-                  <p class="reviews__slide-text">Выбирал между двумя моделями: этим Mi Scooter Pro 2 <br> и Ninebot Max
-                    30P, в плюсах Макса - десятидюймовая резина и дальность пробега на одном заряде, скорость зарядки. В
-                    плюсах Xiaomi - Удобства переноски (вес аппарата, развесовка).
-                    <br>
-                    <br>
-                    В итоге купил Xiaomi и поставил 10 дюймовые шины - получил комфорт при небольшом весе самоката.
-                  </p>
-                </div>
-              </div>
-              <div class="reviews__slide">
-                <div class="reviews__slide-inner">
-                  <h5 class="reviews__slide__name">Михаил Сафонов
-                  </h5>
-                  <span></span>
-                  <p class="reviews__slide-text">Выбирал между двумя моделями: этим Mi Scooter Pro 2 <br> и Ninebot Max
-                    30P, в плюсах Макса - десятидюймовая резина и дальность пробега на одном заряде, скорость зарядки. В
-                    плюсах Xiaomi - Удобства переноски (вес аппарата, развесовка).
-                    <br>
-                    <br>
-                    В итоге купил Xiaomi и поставил 10 дюймовые шины - получил комфорт при небольшом весе самоката.
-                  </p>
-                </div>
-              </div>
-              <div class="reviews__slide">
-                <div class="reviews__slide-inner">
-                  <h5 class="reviews__slide__name">Михаил Сафонов
-                  </h5>
-                  <span></span>
-                  <p class="reviews__slide-text">Выбирал между двумя моделями: этим Mi Scooter Pro 2 <br> и Ninebot Max
-                    30P, в плюсах Макса - десятидюймовая резина и дальность пробега на одном заряде, скорость зарядки. В
-                    плюсах Xiaomi - Удобства переноски (вес аппарата, развесовка).
-                    <br>
-                    <br>
-                    В итоге купил Xiaomi и поставил 10 дюймовые шины - получил комфорт при небольшом весе самоката.
-                  </p>
-                </div>
-              </div>
+              <div class="swiper-paginations"></div>
             </div>
             <div class="reviews__row">
               <div class="reviews__btn-box">
                 <a href="#" class="reviews__btn button">Оставить отзыв</a>
               </div>
               <div class="reviews__arrows">
-                <div class="reviews__arrow reviews__arrow--prev"><svg width="24" height="24" viewBox="0 0 24 24"
+                <button type="button" class="reviews__arrow reviews__arrow--prev"><svg width="24" height="24" viewBox="0 0 24 24"
                     fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M13.8287 19C13.5367 19 13.2467 18.873 13.0487 18.627L8.22066 12.627C7.92266 12.256 7.92666 11.726 8.23166 11.36L13.2317 5.35998C13.5847 4.93598 14.2157 4.87898 14.6407 5.23198C15.0647 5.58498 15.1217 6.21598 14.7677 6.63998L10.2927 12.011L14.6077 17.373C14.9537 17.803 14.8857 18.433 14.4547 18.779C14.2707 18.928 14.0487 19 13.8287 19Z"
@@ -368,8 +382,8 @@
                       <rect width="24" height="24" fill="white" />
                     </g>
                   </svg>
-                </div>
-                <div class="reviews__arrow reviews__arrow--next"><svg width="24" height="24" viewBox="0 0 24 24"
+                </button>
+                <button type="button" class="reviews__arrow reviews__arrow--next"><svg width="24" height="24" viewBox="0 0 24 24"
                     fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M10.1713 19C10.4633 19 10.7533 18.873 10.9513 18.627L15.7793 12.627C16.0773 12.256 16.0733 11.726 15.7683 11.36L10.7683 5.35998C10.4153 4.93598 9.78434 4.87898 9.35934 5.23198C8.93534 5.58498 8.87834 6.21598 9.23234 6.63998L13.7073 12.011L9.39234 17.373C9.04634 17.803 9.11434 18.433 9.54534 18.779C9.72934 18.928 9.95134 19 10.1713 19Z"
@@ -384,7 +398,7 @@
                       <rect width="24" height="24" transform="matrix(-1 0 0 1 24 0)" fill="white" />
                     </g>
                   </svg>
-                </div>
+                </button>
               </div>
             </div>
           </div>
@@ -523,8 +537,8 @@
               <span class="sale__content-price">54 990 ₽</span>
               <div class="sale__filter-wrapper">
                 <div class="sale__body-filter sale__body-filter-wh filter">
-                  <a href="#" class="sale__filter-btn filter-btn filter-white filter-btn--active">Белый</a>
-                  <a href="#" class="sale__filter-btn filter-btn filter-black">Черный</a>
+                  <a href="" class="sale__filter-btn filter-btn filter-white filter-btn--active">Белый</a>
+                  <a href="" class="sale__filter-btn filter-btn filter-black">Черный</a>
                 </div>
               </div>
               <div class="mb-bike-box mb-bike-box-wh"></div>
@@ -565,8 +579,7 @@
   </div>
 </body>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 </html>
